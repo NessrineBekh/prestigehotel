@@ -43,7 +43,7 @@
                             <td class="text-center">{{ slider.createdAt | date('d/m/Y') }}</td>
                             <td class="text-center">
                                  <a href="{{ path('update_photo', {'id': slider.id}) }}" class="text-warning" title="Modifier la photo"><i class="fa fa-edit"></i></a> 
-                                <a href="{{ path('delete_photo', {'id': slider.id}) }}" class="text-danger" title="Supprimer définitivement la photo" onclick="return confirm('Voulez-vous supprimer définitivement cet article ?')" title="Supprimer la photo"><i class="fa fa-trash"></i></a>
+                                <a href="{{ path('delete_photo', {'id': slider.id}) }}" class="text-danger" title="Supprimer définitivement la photo" onclick="return confirm('Voulez-vous supprimer définitivement la photo ?')" title="Supprimer la photo"><i class="fa fa-trash"></i></a>
                                 
                             </td>
                         </tr>

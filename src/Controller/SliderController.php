@@ -101,7 +101,7 @@ class SliderController extends AbstractController
 
         $repository->remove($slider, true);
 
-        $this->addFlash('success', 'slider supprimé définitivement du système :( !');
+        $this->addFlash('success', 'photo supprimée définitivement du système :( !');
         return $this->RedirectToRoute('show_slider');
     }//end function hardDelete_slider()
 

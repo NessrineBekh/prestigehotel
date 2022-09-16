@@ -11,7 +11,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class ContactController extends AbstractController
 {
-    #[Route('/contact', name: 'contact')]
+    #[Route('/contact', name: 'contact', methods: ['GET'])]
     public function contact(Request $request, MailerService $mailer): Response
     {
         $form = $this->createForm(ContactFormType::class)->handleRequest($request);

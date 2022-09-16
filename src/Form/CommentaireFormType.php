@@ -53,10 +53,6 @@ class CommentaireFormType extends AbstractType
                     new Email([
                         'message' => "l'email n'est pas au bon format ! Ex : mail@example.com"
                     ]),
-                    new Length([
-                        'min' => 4,
-                        'max' => 255
-                    ])
                 ]
             ])
             ->add('categorie', ChoiceType::class, [

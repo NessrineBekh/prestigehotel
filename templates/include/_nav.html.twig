@@ -35,18 +35,17 @@
           	{% if is_granted("ROLE_ADMIN") %} 
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dashboard
+            Espace Admin
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-            <li><a class="dropdown-item" href="{{ path('show_dashboard') }}">Administration</a></li>
+            <li><a class="dropdown-item" href="{{ path('show_dashboard') }}">Gestion des chambres</a></li>
                 <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="{{ path('show_membres') }}">Gestion des membres</a></li>
                 <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="{{ path('article_dashboard') }}">Gérer les articles</a></li>
-        
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="{{ path('show_slider') }}">Gestion des Slider</a></li>
+            <li><a class="dropdown-item" href="{{ path('show_slider') }}">Gestion des slider</a></li>
           </ul>
           {% endif %}
           

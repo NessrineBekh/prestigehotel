@@ -19,13 +19,13 @@
 				
 					<div class="row">
 						<div class="col">
-
-{% for commentaire in commentaires | reverse %}
 							<h2 class="text-center	mx-3 my-3">
 								<i class="fa fa-comments"></i>
 								Votre avis compte :</h2>
+<div class="col">
+{% for commentaire in commentaires | reverse %}
 
-								<div class="col">
+								
 							<div class="alert alert-dark text-dark com" role="alert">
 								<h4 class="alert-heading">{{ commentaire.nom ~ ' ' ~ commentaire.prenom ~ ' ,' }}
 									<span class="h6">
@@ -85,9 +85,9 @@
 					{% else %}
 						<div class="alerte alert-warning mb-3 fw-bolder" role="alert">
 							<p>Aucun commentaire pour l'instant
-							</p>
+							</p>	{% endfor %}
 						</div>
-					{% endfor %}
+				
 				</div>	</div>
 				<div class="col-6">
 					<h2 class="text-center">
